@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amine — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Subtle Background Grid & Ambient Glow -->
+  <div class="bg-grid"></div>
+  <div class="ambient-glow"></div>
+  <div class="ad-bg-layer" id="adBgLayer" aria-hidden="true">
+    <div class="ad-bg-mark" id="adBgMark">AD</div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <a href="#" class="logo">codebyad<span>.</span></a>
+
+    <nav class="nav-links">
+      <a href="#about" data-i18n="navAbout">About</a>
+      <a href="#projects" data-i18n="navProjects">Projects</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+    </nav>
+
+    <div class="lang-toggle">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="fr">FR</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="status-badge">
+          <span class="pulse-dot"></span>
+          <span data-i18n="badge">Available for Creative & Tech Projects</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="greeting" data-i18n="heroGreeting">Hello, I'm <span class="accent-orange">CODEBYAD</span></span>
+          <span class="tagline" data-i18n="heroHeadline">Crafting the digital. Engineering the experience.</span>
+        </h1>
+
+        <p class="hero-sub" data-i18n="heroSub">
+          Passionate about full-stack development, creative interfaces, and building digital products where design meets functionality
+        </p>
+
+        <div class="cta-group">
+          <a href="#projects" class="btn-primary" data-i18n="ctaWork">Explore Projects</a>
+          <a href="#contact" class="btn-secondary" data-i18n="ctaContact">Let's Talk</a>
+        </div>
+      </div>
+<!-- Interactive 3D Signal Core Card (Replaces Bitmoji) -->
+      <div class="hero-visual">
+        <div class="avatar-card tilt-card" id="tiltCard">
+          <div class="card-glow"></div>
+
+          <div class="core-visual">
+            <div class="orbit-ring ring-outer"></div>
+            <div class="orbit-ring ring-inner"></div>
+            <div class="core-monogram">
+              <span class="core-code">AD</span>
+              <span class="core-sub">CODEBYAD</span>
+            </div>
+
+            <div class="core-metrics">
+              <div class="metric-item">
+                <strong>3+</strong>
+                <span data-i18n="metricYears">Years Freelance</span>
+              </div>
+              <div class="metric-divider"></div>
+              <div class="metric-item">
+                <strong>EN / FR</strong>
+                <span data-i18n="metricLang">Bilingual</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-pill pill-top">
+            <span class="dot-cyan"></span> UI / Creative
+          </div>
+          <div class="floating-pill pill-bottom">
+            <span class="dot-gold"></span> Full-Stack & Tech
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ME 4-PHOTO SCROLL STORY ================= -->
+    <section class="story-section" id="about">
+      <div class="story-header">
+        <span class="section-kicker" data-i18n="storyKicker">01 / ABOUT AMINE DKYAR</span>
+        <h2 data-i18n="storyMainTitle">Code, design, calm energy, and <span>real life</span>.</h2>
+      </div>
+
+      <!-- PHOTO 1: WHO I AM -->
+      <div class="story-row reveal-on-scroll">
+        <div class="story-photo-card">
+          <div class="photo-frame">
+            <img src="me-1.jpg" alt="Amine Dkyar" class="story-img" />
+          </div>
+          <div class="photo-caption">
+            <span class="caption-dot orange-dot"></span>
+            <span data-i18n="pic1Caption">01 / Who I Am • Amine Dkyar (22)</span>
+          </div>
+        </div>
+
+        <div class="story-copy">
+          <span class="chapter-tag" data-i18n="ch1Tag">01 — IDENTITY & FREELANCE CRAFT</span>
+          <h3 data-i18n="ch1Title">Hey, I'm Amine Dkyar — 22, building digital reputation for businesses.</h3>
+          <p data-i18n="ch1Body1">
+            I'm a 22-year-old full-stack developer and web designer who started freelancing three years ago. I help businesses build a strong, trustworthy digital reputation through fast web applications, modern interfaces, and clear brand presence.
+          </p>
+          <p data-i18n="ch1Body2">
+            By nature, I'm calm under pressure and genuinely love learning new skills—whether it's mastering a new framework, refining UI details, or diving into a good book.
+          </p>
+
+          <div class="story-stats">
+            <div class="stat-box">
+              <strong>22</strong>
+              <span data-i18n="statAge">Years Old</span>
+            </div>
+            <div class="stat-box">
+              <strong>3+ Yrs</strong>
+              <span data-i18n="statExp">Freelance Dev & Design</span>
+            </div>
+            <div class="stat-box">
+              <strong>Calm</strong>
+              <span data-i18n="statRole">& Continuous Learner</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PHOTO 2: GYM -->
+      <div class="story-row reverse reveal-on-scroll">
+        <div class="story-photo-card">
+          <div class="photo-frame">
+            <img src="me-2.jpg" alt="Amine at the Gym" class="story-img" />
+          </div>
+          <div class="photo-caption">
+            <span class="caption-dot orange-dot"></span>
+            <span data-i18n="pic2Caption">02 / Gym • Consistency & Strength</span>
+          </div>
+        </div>
+
+        <div class="story-copy">
+          <span class="chapter-tag" data-i18n="ch2Tag">02 — DISCIPLINE & FOCUS</span>
+          <h3 data-i18n="ch2Title">Training the body to keep the mind sharp.</h3>
+          <p data-i18n="ch2Body">
+            The gym is where I build daily discipline. Showing up consistently, tracking progress, and pushing past limits translates directly into how I approach full-stack development and design—steady, patient, and committed to long-term results.
+          </p>
+          <div class="hobby-pill-row">
+            <span class="mini-tag">🏋️ Consistency</span>
+            <span class="mini-tag">🔥 Mental Clarity</span>
+            <span class="mini-tag">📚 Reading & Self-Growth</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PHOTO 3: FOOTBALL -->
+      <div class="story-row reveal-on-scroll">
+        <div class="story-photo-card">
+          <div class="photo-frame">
+            <img src="me-3.jpg" alt="Amine Playing Football" class="story-img" />
+          </div>
+          <div class="photo-caption">
+            <span class="caption-dot cyan-dot"></span>
+            <span data-i18n="pic3Caption">03 / Football • Teamwork & Instinct</span>
+          </div>
+        </div>
+
+        <div class="story-copy">
+          <span class="chapter-tag cyan-tag" data-i18n="ch3Tag">03 — ENERGY & TEAMWORK</span>
+          <h3 data-i18n="ch3Title">Fast decisions, vision on the pitch, and team spirit.</h3>
+          <p data-i18n="ch3Body">
+            Football keeps my competitive energy alive. Reading the game, staying calm with the ball, and communicating with teammates mirrors how I collaborate with clients—understanding the whole picture before making the right move.
+          </p>
+          <div class="hobby-pill-row">
+            <span class="mini-tag">⚽ Team Synergy</span>
+            <span class="mini-tag">⚡ Quick Thinking</span>
+            <span class="mini-tag">🎯 Game Vision</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PHOTO 4: TRAVELING -->
+      <div class="story-row reverse reveal-on-scroll">
+        <div class="story-photo-card">
+          <div class="photo-frame">
+            <img src="me-4.jpg" alt="Amine Traveling" class="story-img" />
+          </div>
+          <div class="photo-caption">
+            <span class="caption-dot gold-dot"></span>
+            <span data-i18n="pic4Caption">04 / Traveling • New Horizons</span>
+          </div>
+        </div>
+
+        <div class="story-copy">
+          <span class="chapter-tag gold-tag" data-i18n="ch4Tag">04 — CURIOSITY & INSPIRATION</span>
+          <h3 data-i18n="ch4Title">Exploring new places to fuel fresh creative ideas.</h3>
+          <p data-i18n="ch4Body">
+            Traveling—alongside reading—feeds my curiosity. Stepping into new environments, observing different aesthetics, and meeting new people helps me bring fresh, original perspectives into every digital brand and interface I craft.
+          </p>
+          <div class="hobby-pill-row">
+            <span class="mini-tag">✈️ Exploration</span>
+            <span class="mini-tag">🌍 New Perspectives</span>
+            <span class="mini-tag">💡 Creative Fuel</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS SHOWCASE + SLIDING CASE PANEL ================= -->
+    <section class="projects" id="projects">
+      <div class="section-header">
+        <div>
+          <span class="section-kicker dark-kicker" data-i18n="projectsKicker">02 / SELECTED WORK</span>
+          <h2 data-i18n="projectsTitle">Featured <span>Projects</span></h2>
+        </div>
+
+        <!-- Category Filter Pills -->
+        <div class="project-filters" id="projectFilters">
+          <button class="filter-btn active" data-filter="all" data-i18n="filterAll">All</button>
+          <button class="filter-btn" data-filter="web" data-i18n="filterWeb">Web & UI</button>
+          <button class="filter-btn" data-filter="tech" data-i18n="filterTech">Full-Stack & Tech</button>
+        </div>
+      </div>
+
+      <div class="grid" id="projectsGrid">
+        <!-- Project 1 -->
+        <article class="card project-card reveal-on-scroll" data-category="web" data-project="p1">
+          <div class="card-media">
+            <div class="card-slide-layer">
+              <span class="card-tag" data-i18n="tag1">Web & UI</span>
+              <span class="card-num">01</span>
+            </div>
+            <div class="card-peek-info">
+              <span data-i18n="p1Stack">UI/UX • Motion • Responsive</span>
+            </div>
+          </div>
+
+          <h3 data-i18n="p1Title">Brand & Experience 01</h3>
+          <p data-i18n="p1Desc">Modern digital storefront engineered to boost trust, speed, and client conversions.</p>
+
+          <div class="card-footer-row">
+            <span class="card-result" data-i18n="p1Metric">+45% Engagement</span>
+            <button type="button" class="card-link open-drawer-btn" data-project="p1" data-i18n="viewProject">
+              Explore Details →
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="card project-card reveal-on-scroll" data-category="tech" data-project="p2">
+          <div class="card-media">
+            <div class="card-slide-layer">
+              <span class="card-tag cyan" data-i18n="tag2">Full-Stack & Tech</span>
+              <span class="card-num">02</span>
+            </div>
+            <div class="card-peek-info">
+              <span data-i18n="p2Stack">Full-Stack • 3D / Interactive • Cloud</span>
+            </div>
+          </div>
+
+          <h3 data-i18n="p2Title">Interactive Platform 02</h3>
+          <p data-i18n="p2Desc">Turning complex technical workflows into clean, fast, and intuitive web tools.</p>
+
+          <div class="card-footer-row">
+            <span class="card-result cyan-text" data-i18n="p2Metric">Fast & Scalable</span>
+            <button type="button" class="card-link open-drawer-btn" data-project="p2" data-i18n="viewProject">
+              Explore Details →
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="card project-card reveal-on-scroll" data-category="web" data-project="p3">
+          <div class="card-media">
+            <div class="card-slide-layer">
+              <span class="card-tag gold" data-i18n="tag3">Digital Reputation</span>
+              <span class="card-num">03</span>
+            </div>
+            <div class="card-peek-info">
+              <span data-i18n="p3Stack">Identity • Landing System • EN/FR</span>
+            </div>
+          </div>
+
+          <h3 data-i18n="p3Title">Business Presence 03</h3>
+          <p data-i18n="p3Desc">High-contrast visual system helping growing businesses stand out with authority.</p>
+
+          <div class="card-footer-row">
+            <span class="card-result gold-text" data-i18n="p3Metric">Clear Positioning</span>
+            <button type="button" class="card-link open-drawer-btn" data-project="p3" data-i18n="viewProject">
+              Explore Details →
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= SLIDING PROJECT DETAILS DRAWER ================= -->
+    <div class="drawer-backdrop" id="drawerBackdrop" aria-hidden="true"></div>
+    <aside class="project-drawer" id="projectDrawer" aria-hidden="true">
+      <div class="drawer-top">
+        <span class="drawer-tag" id="drawerTag">CASE STUDY</span>
+        <button type="button" class="close-drawer-btn" id="closeDrawerBtn" aria-label="Close">✕</button>
+      </div>
+
+      <h3 class="drawer-title" id="drawerTitle">Project Title</h3>
+      <p class="drawer-summary" id="drawerSummary">Project summary...</p>
+
+      <div class="drawer-block">
+        <h4 id="drawerChallengeLabel">The Challenge</h4>
+        <p id="drawerChallenge"></p>
+      </div>
+
+      <div class="drawer-block">
+        <h4 id="drawerSolutionLabel">What I Built</h4>
+        <p id="drawerSolution"></p>
+      </div>
+
+      <div class="drawer-block">
+        <h4 id="drawerHighlightsLabel">Key Highlights</h4>
+        <ul class="drawer-list" id="drawerHighlights"></ul>
+      </div>
+
+      <div class="drawer-stack" id="drawerStack"></div>
+
+      <a href="#contact" class="btn-primary drawer-cta" id="drawerCta">Start a Similar Project</a>
+    </aside>
+    <!-- ================= DEV KNOWLEDGE WORLD SECTION ================= -->
+    <section class="dev-world-section" id="stack">
+      <div class="dev-world-header">
+        <div>
+          <span class="section-kicker dark-kicker" data-i18n="worldKicker">02.5 / TECH STACK GLOBE</span>
+          <h2 data-i18n="worldTitle">Dev <span>World</span></h2>
+        </div>
+        <p class="dev-world-hint" data-i18n="worldHint">
+          
+        </p>
+      </div>
+
+      <div class="world-stage" id="worldStage">
+        <!-- Small Flash Overlay when switching active language -->
+        <div class="world-flash" id="worldFlash"></div>
+
+        <!-- Spherical Globe Core + Latitude/Longitude Rings -->
+        <div class="globe-sphere">
+          <div class="globe-ring ring-equator"></div>
+          <div class="globe-ring ring-meridian-a"></div>
+          <div class="globe-ring ring-meridian-b"></div>
+          <div class="globe-glow-core"></div>
+
+          <!-- Rotating Language Orbit -->
+          <div class="globe-orbit" id="globeOrbit"></div>
+        </div>
+
+        <!-- Active Language Spotlight Card -->
+        <div class="active-lang-panel" id="activeLangPanel">
+          <div class="active-lang-badge">
+            <span class="flash-dot"></span>
+            <span data-i18n="activeNodeLabel">ACTIVE SIGNAL</span>
+          </div>
+          <div class="active-lang-main">
+            <div class="active-lang-icon" id="activeLangIcon"></div>
+            <div>
+              <h3 id="activeLangName">HTML5</h3>
+              <p id="activeLangRole">Semantic Structure & Web Markup</p>
+            </div>
+          </div>
+          <div class="lang-quick-strip" id="langQuickStrip"></div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= INTERACTIVE LAB / LIVE DEMOS ================= -->
+<section class="lab-section reveal-on-scroll" id="lab">
+  <div class="section-header">
+    <p class="section-kicker" data-i18n="labKicker">02.6 / INTERACTIVE LAB</p>
+    <h2 class="section-title" data-i18n="labTitle">Live <span>Experiments</span></h2>
+    <p class="section-sub" data-i18n="labSub">
+      Don't just read specs—test real interactive modules, 3D math, and automation pipelines directly in your browser.
+    </p>
+  </div>
+
+  <div class="lab-grid">
+    <!-- Demo 1: 3D Wireframe Canvas -->
+    <article class="lab-card">
+      <div class="lab-card-top">
+        <span class="lab-badge">01 • 3D / CANVAS</span>
+        <button type="button" class="lab-mini-btn" id="lab3dModeBtn" data-i18n="lab3dBtn">
+          Boost Spin ⚡
+        </button>
+      </div>
+      <div class="lab-stage lab-stage-3d" id="lab3dStage">
+        <canvas id="lab3dCanvas"></canvas>
+        <span class="lab-hud" id="lab3dHud">DRAG OR MOVE CURSOR</span>
+      </div>
+      <h3 data-i18n="lab1Title">3D Spatial Geometry Engine</h3>
+      <p data-i18n="lab1Desc">
+        Real-time 3D vertex projection and perspective rotation rendered natively at 60fps without heavy external overhead.
+      </p>
+    </article>
+
+    <!-- Demo 2: Magnetic & Tactile UI Sandbox -->
+    <article class="lab-card">
+      <div class="lab-card-top">
+        <span class="lab-badge">02 • UI / MOTION</span>
+        <span class="lab-status-dot" id="labUiStatus">IDLE</span>
+      </div>
+      <div class="lab-stage lab-stage-ui" id="labMagneticZone">
+        <button type="button" class="magnetic-demo-btn" id="magneticDemoBtn">
+          <span data-i18n="labMagBtn">Hover & Click Me</span>
+          <small id="labClickCounter">0 triggers</small>
+        </button>
+      </div>
+      <h3 data-i18n="lab2Title">Magnetic & Kinetic Micro-UI</h3>
+      <p data-i18n="lab2Desc">
+        Physics-inspired cursor attraction and tactile state feedback engineered to make interfaces feel alive and responsive.
+      </p>
+    </article>
+
+    <!-- Demo 3: Live Automation Pipeline -->
+    <article class="lab-card">
+      <div class="lab-card-top">
+        <span class="lab-badge">03 • AUTOMATION</span>
+        <button type="button" class="lab-mini-btn" id="labRunFlowBtn" data-i18n="labFlowBtn">
+          Simulate Flow ▶
+        </button>
+      </div>
+      <div class="lab-stage lab-stage-flow">
+        <div class="flow-nodes">
+          <div class="flow-node" id="flowNode1">Form JSON</div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-node" id="flowNode2">Webhook</div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-node" id="flowNode3">Calendar Sync</div>
+        </div>
+        <div class="flow-terminal" id="flowTerminal">
+          Ready: click "Simulate Flow" to trace payload.
+        </div>
+      </div>
+      <h3 data-i18n="lab3Title">Zero-Friction Workflow Pipeline</h3>
+      <p data-i18n="lab3Desc">
+        End-to-end event automation turning user actions into instant calendar invites and synced schedules.
+      </p>
+    </article>
+  </div>
+</section>
+
+    <!-- ================= YOUR PROBLEM / OUR SOLUTION & ROI ================= -->
+    <section class="value-section" id="value">
+      <div class="value-header">
+        <span class="section-kicker dark-kicker" data-i18n="valKicker">02.8 / CLIENT IMPACT & ROI</span>
+        <h2 data-i18n="valTitle">Your Problem. Our Solution. <span>Real Growth</span>.</h2>
+        <p class="value-sub" data-i18n="valSub">
+          How CODEBYAD helps businesses build digital reputation, attract more clients, and turn attention into revenue.
+        </p>
+      </div>
+
+      <!-- Problem vs. Solution Grid -->
+      <div class="ps-grid">
+        <div class="ps-card problem-card reveal-on-scroll">
+          <span class="ps-badge bad-badge" data-i18n="probBadge">YOUR PROBLEM</span>
+          <h3 data-i18n="probTitle">Losing clients before the conversation even starts</h3>
+          <ul class="ps-list">
+            <li data-i18n="prob1">Slow, outdated, or confusing websites that make visitors leave early</li>
+            <li data-i18n="prob2">Weak online reputation—prospects don't see proof, clarity, or authority</li>
+            <li data-i18n="prob3">Disconnected tools and friction when trying to book, ask, or buy</li>
+            <li data-i18n="prob4">Wasted ad clicks or referrals landing on pages that don't convert</li>
+          </ul>
+        </div>
+
+        <div class="ps-card solution-card reveal-on-scroll">
+          <span class="ps-badge good-badge" data-i18n="solBadge">OUR SOLUTION</span>
+          <h3 data-i18n="solTitle">High-trust web products built to convert</h3>
+          <ul class="ps-list">
+            <li data-i18n="sol1">Fast, modern full-stack & UI design that establishes instant credibility</li>
+            <li data-i18n="sol2">Clear positioning, case proof, and bilingual (EN/FR) reach for wider markets</li>
+            <li data-i18n="sol3">Smooth user journeys, interactive flows, and frictionless contact paths</li>
+            <li data-i18n="sol4">Scalable architecture that grows with your campaigns and client demand</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- How It Helps Financially & Brings More Clients -->
+      <div class="roi-pillars">
+        <div class="roi-box reveal-on-scroll">
+          <span class="roi-num">01</span>
+          <h4 data-i18n="roi1Title">More Clients</h4>
+          <p data-i18n="roi1Desc">
+            Clearer messaging, stronger first impressions, and effortless calls-to-action turn curious visitors and referrals into real inquiries.
+          </p>
+        </div>
+
+        <div class="roi-box reveal-on-scroll">
+          <span class="roi-num">02</span>
+          <h4 data-i18n="roi2Title">Higher Conversion & Trust</h4>
+          <p data-i18n="roi2Desc">
+            A sharp digital reputation lowers buyer hesitation—when people trust your brand online, they say yes faster and ask for fewer discounts.
+          </p>
+        </div>
+
+        <div class="roi-box reveal-on-scroll">
+          <span class="roi-num">03</span>
+          <h4 data-i18n="roi3Title">Stronger Financial Return</h4>
+          <p data-i18n="roi3Desc">
+            More qualified leads + better close rates + saved manual hours mean more revenue coming in and less money leaked through a weak online presence.
+          </p>
+        </div>
+      </div>
+
+      <!-- Day 1 vs Day 30 Table -->
+      <!-- ================= GRAPHIQUE STATISTIQUE : JOUR 1 VS JOUR 30 ================= -->
+      <div class="stats-chart-wrap reveal-on-scroll" id="momentumChart">
+        <div class="table-top-bar">
+          <div>
+            <h3 data-i18n="tableTitle">Typical Rollout & Momentum: Day 1 vs. Day 30</h3>
+            <div class="chart-legend">
+              <span class="legend-item">
+                <span class="legend-swatch day1-swatch"></span>
+                <span data-i18n="legendDay1">Day 1 (Kickoff & Foundation)</span>
+              </span>
+              <span class="legend-item">
+                <span class="legend-swatch day30-swatch"></span>
+                <span data-i18n="legendDay30">Day 30 (Live & Generating Momentum)</span>
+              </span>
+            </div>
+          </div>
+          <span class="table-note" data-i18n="tableNote">Illustrative milestone framework</span>
+        </div>
+
+        <div class="chart-rows">
+          <!-- Axe 1 : Réputation Digitale -->
+          <div class="chart-metric-row" data-d1="22" data-d30="88">
+            <div class="chart-row-head">
+              <strong data-i18n="rowRep">Digital Reputation</strong>
+              <span class="chart-score-pill">22% → 88%</span>
+            </div>
+            <div class="bars-track-group">
+              <div class="bar-line">
+                <span class="bar-day-label">J1</span>
+                <div class="bar-bg">
+                  <div class="bar-fill bar-day1"></div>
+                </div>
+                <small data-i18n="d1Rep">Audit of current presence, positioning & brand gaps</small>
+              </div>
+              <div class="bar-line">
+                <span class="bar-day-label">J30</span>
+                <div class="bar-bg">
+                  <div class="bar-fill bar-day30"></div>
+                </div>
+                <small class="day30-note" data-i18n="d30Rep">Polished, credible online brand with clear proof & positioning</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Axe 2 : Web & Stack Technique -->
+          <div class="chart-metric-row" data-d1="25" data-d30="92">
+            <div class="chart-row-head">
+              <strong data-i18n="rowWeb">Web & Tech Stack</strong>
+              <span class="chart-score-pill">25% → 92%</span>
+            </div>
+            <div class="bars-track-group">
+              <div class="bar-line">
+                <span class="bar-day-label">J1</span>
+                <div class="bar-bg">
+                  <div class="bar-fill bar-day1"></div>
+                </div>
+                <small data-i18n="d1Web">Architecture plan, UX structure & core build setup</small>
+              </div>
+              <div class="bar-line">
+                <span class="bar-day-label">J30</span>
+                <div class="bar-bg">
+                  <div class="bar-fill bar-day30"></div>
+                </div>
+                <small class="day30-note" data-i18n="d30Web">Live, fast, responsive experience tested across devices</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Axe 3 : Acquisition Clients -->
+          <div class="chart-metric-row" data-d1="18" data-d30="85">
+            <div class="chart-row-head">
+              <strong data-i18n="rowClients">Client Acquisition</strong>
+              <span class="chart-score-pill">18% → 85%</span>
+            </div>
+            <div class="bars-track-group">
+              <div class="bar-line">
+                <span class="bar-day-label">J1</span>
+                <div class="bar-bg">
+                  <div class="bar-fill bar-day1"></div>
+                </div>
+                <small data-i18n="d1Clients">Targeted visitor journey & clear lead capture mapped</small>
+              </div>
+              <div class="bar-line">
+                <span class="bar-day-label">J30</span>
+                <div class="bar-bg">
+                  <div class="bar-fill bar-day30"></div>
+                </div>
+                <small class="day30-note" data-i18n="d30Clients">Consistent inbound inquiries & smoother sales conversations</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Axe 4 : Impact Financier -->
+          <div class="chart-metric-row" data-d1="20" data-d30="90">
+            <div class="chart-row-head">
+              <strong data-i18n="rowMoney">Financial Impact</strong>
+              <span class="chart-score-pill">20% → 90%</span>
+            </div>
+            <div class="bars-track-group">
+              <div class="bar-line">
+                <span class="bar-day-label">J1</span>
+                <div class="bar-bg">
+                  <div class="bar-fill bar-day1"></div>
+                </div>
+                <small data-i18n="d1Money">Costly bottlenecks identified & quick wins prioritized</small>
+              </div>
+              <div class="bar-line">
+                <span class="bar-day-label">J30</span>
+                <div class="bar-bg">
+                  <div class="bar-fill bar-day30"></div>
+                </div>
+                <small class="day30-note" data-i18n="d30Money">Higher lead-to-client potential & stronger revenue leverage</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= GOOGLE BUSINESS & ADS MARKETING ================= -->
+<section class="growth-section reveal-on-scroll" id="growth">
+  <div class="section-header">
+    <p class="section-kicker" data-i18n="growthKicker">02.7 / SEARCH & LOCAL GROWTH</p>
+    <h2 class="section-title" data-i18n="growthTitle">Google Business & <span>Ads Marketing</span></h2>
+    <p class="section-sub" data-i18n="growthSub">
+      Visibility where high-intent buyers already search—combining local Google Business optimization with targeted Google Ads and landing pages that convert.
+    </p>
+  </div>
+
+  <div class="growth-layout">
+    <!-- Left: Two Core Pillars -->
+    <div class="growth-pillars">
+      <article class="growth-card">
+        <div class="growth-card-top">
+          <span class="growth-tag" data-i18n="gbpTag">GOOGLE BUSINESS PROFILE</span>
+          <span class="growth-metric" data-i18n="gbpMetric">Local Maps & Trust</span>
+        </div>
+        <h3 data-i18n="gbpTitle">Own Local Search & Map Results</h3>
+        <p data-i18n="gbpDesc">
+          Complete profile setup, service categories, location relevance, photo polish, and review workflows so nearby clients find you first and call or book with confidence.
+        </p>
+        <ul class="growth-bullets">
+          <li data-i18n="gbpB1">Accurate business info, hours, services & local coverage</li>
+          <li data-i18n="gbpB2">Consistent brand visuals & trust signals that stand out on Maps</li>
+          <li data-i18n="gbpB3">Direct link to your site, WhatsApp & rendez-vous booking</li>
+        </ul>
+      </article>
+
+      <article class="growth-card">
+        <div class="growth-card-top">
+          <span class="growth-tag" data-i18n="adsTag">GOOGLE ADS & CONVERSION</span>
+          <span class="growth-metric" data-i18n="adsMetric">High-Intent Traffic</span>
+        </div>
+        <h3 data-i18n="adsTitle">Turn Search Demand Into Real Inquiries</h3>
+        <p data-i18n="adsDesc">
+          Structured search campaigns, sharp ad copy, negative keyword filtering, and dedicated landing pages engineered so paid clicks land on fast, clear pages—not leaks.
+        </p>
+        <ul class="growth-bullets">
+          <li data-i18n="adsB1">Intent-focused keywords & geo-targeted campaign structure</li>
+          <li data-i18n="adsB2">High-converting landing pages paired with your brand identity</li>
+          <li data-i18n="adsB3">Lead & booking tracking to measure real return, not vanity clicks</li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- Right: Interactive Channel Switcher -->
+    <aside class="growth-preview-box">
+      <div class="growth-tabs" role="tablist">
+        <button type="button" class="growth-tab active" data-channel="gbp" data-i18n="tabGbp">
+          Google Business
+        </button>
+        <button type="button" class="growth-tab" data-channel="ads" data-i18n="tabAds">
+          Google Ads
+        </button>
+      </div>
+
+      <div class="growth-preview-card" id="growthPreviewCard">
+        <span class="preview-kicker" id="growthPreviewKicker">LOCAL DISCOVERY & CREDIBILITY</span>
+        <h4 id="growthPreviewHeading">CODEBYAD Partner • Local & Remote</h4>
+        <p class="preview-copy" id="growthPreviewCopy">
+          When someone searches for your service nearby, a complete, active Google Business Profile paired with a sharp website builds immediate legitimacy before they even click.
+        </p>
+        <div class="preview-stats">
+          <div class="preview-stat">
+            <strong id="growthStat1Val">Maps + Search</strong>
+            <span id="growthStat1Lbl">Local Visibility</span>
+          </div>
+          <div class="preview-stat">
+            <strong id="growthStat2Val">1-Tap Action</strong>
+            <span id="growthStat2Lbl">Call / Book / Site</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+    <!-- ================= REGIONS & CITIES DEEP-DIVE MAP ================= -->
+    <section class="regions-section" id="regions">
+      <div class="regions-header">
+        <div>
+          <span class="section-kicker dark-kicker" data-i18n="regKicker">02.9 / SERVICE ZONES & COVERAGE</span>
+          <h2 data-i18n="regTitle">Regions Where I <span>Deliver</span></h2>
+        </div>
+        <p class="regions-sub" data-i18n="regSub">
+          Select a city or region to scan the map and zoom deep into local collaboration & digital impact.
+        </p>
+      </div>
+
+      <!-- City Selector Pills -->
+      <div class="city-selector-bar" id="citySelectorBar"></div>
+
+      <div class="regions-stage" id="regionsStage">
+        <!-- Map Radar Scan & Coordinate Grid -->
+        <div class="map-canvas-panel" id="mapCanvasPanel">
+          <div class="map-grid-overlay"></div>
+          <div class="map-radar-sweep" id="mapRadarSweep"></div>
+
+          <div class="map-top-hud">
+            <span class="hud-pill">
+              <span class="hud-pulse"></span>
+              <span id="hudCoords">33.5731° N, 7.5898° W</span>
+            </span>
+            <span class="hud-zoom" id="hudZoom">DEPTH: 1.0x</span>
+          </div>
+
+          <!-- Stylized Morocco Map Silhouette + Interactive City Pins -->
+          <div class="map-visual-box" id="mapVisualBox">
+            <svg class="morocco-map-svg" viewBox="0 0 420 460" aria-hidden="true">
+              <defs>
+                <linearGradient id="mapFillGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#ff5500" stop-opacity="0.24" />
+                  <stop offset="55%" stop-color="#22d3ee" stop-opacity="0.08" />
+                  <stop offset="100%" stop-color="#14141a" stop-opacity="0.7" />
+                </linearGradient>
+              </defs>
+              <!-- Stylized Atlantic Coast & Morocco Outline -->
+              <path
+                class="map-landmass"
+                d="M178 24 L235 28 L272 52 L318 68 L345 96 L312 125 L284 146 L256 172 L232 205 L205 245 L176 292 L145 345 L108 398 L62 436 L34 422 L76 364 L112 302 L134 242 L142 185 L136 128 L152 72 Z"
+                fill="url(#mapFillGrad)"
+                stroke="rgba(255, 85, 0, 0.55)"
+                stroke-width="2"
+              />
+              <!-- Connection Route Lines Between Core Hubs -->
+              <polyline
+                class="map-route-line"
+                points="232,52 174,118 152,164 224,142 254,148 134,256"
+                fill="none"
+                stroke="rgba(255, 255, 255, 0.22)"
+                stroke-width="1.5"
+                stroke-dasharray="5 5"
+              />
+            </svg>
+
+            <!-- City Pins Layer (Populated by JS) -->
+            <div class="map-pins-layer" id="mapPinsLayer"></div>
+          </div>
+        </div>
+
+        <!-- Deep-Dive City Inspector Panel -->
+        <div class="city-deep-panel" id="cityDeepPanel">
+          <div class="deep-panel-top">
+            <span class="deep-badge" id="deepRegionBadge">CASABLANCA-SETTAT</span>
+            <button type="button" class="deep-toggle-btn" id="deepZoomBtn" data-i18n="deepDiveBtn">
+              Go Deep Inside ⤢
+            </button>
+          </div>
+
+          <h3 id="deepCityName">Casablanca</h3>
+          <p class="deep-tagline" id="deepCityTagline">Economic hub, fast-moving brands & high-conversion digital experiences.</p>
+
+          <div class="deep-metrics-grid">
+            <div class="deep-stat">
+              <span class="deep-stat-label" data-i18n="lblFocus">Primary Focus</span>
+              <strong id="deepFocus">Web Apps, UI & Brand Authority</strong>
+            </div>
+            <div class="deep-stat">
+              <span class="deep-stat-label" data-i18n="lblMode">Collaboration</span>
+              <strong id="deepMode">On-Site & Hybrid / Remote</strong>
+            </div>
+          </div>
+
+          <div class="deep-detail-box">
+            <h4 data-i18n="lblInside">Inside This Hub</h4>
+            <p id="deepInsideText">
+              In Casablanca, businesses compete for attention every second. I help companies stand out with fast full-stack builds, sharp visual identity, and clear conversion journeys.
+            </p>
+          </div>
+
+          <a href="#contact" class="btn-primary deep-contact-btn" id="deepContactBtn" data-i18n="deepContactCta">
+            Work With Me Here →
+          </a>
+        </div>
+      </div>
+    </section>
+  <!-- ================= ASK AMINE AI SECTION ================= -->
+    <section class="ai-section" id="ask-ai">
+      <div class="ai-container">
+        <div class="ai-header">
+          <span class="section-kicker" data-i18n="aiKicker">03 / INTERACTIVE ASSISTANT</span>
+          <h2 data-i18n="aiTitle">Ask <span>Amine AI</span></h2>
+          <p data-i18n="aiSub">Tap a quick question or type your own to learn more about my work, skills, and availability.</p>
+        </div>
+
+        <div class="chat-box">
+          <!-- Chat Messages Window -->
+          <div class="chat-messages" id="chatMessages">
+            <div class="msg bot-msg">
+              <div class="msg-avatar">A<span>.</span></div>
+              <div class="msg-bubble" data-i18n="aiWelcome">
+                Hey! 👋 I'm Amine's virtual assistant. Ask me anything about my projects, skills, or how we can work together!
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Prompt Suggestions -->
+          <div class="quick-prompts" id="quickPrompts">
+            <button class="prompt-chip" data-q="skills" data-i18n="qSkills">⚡ What are your main skills?</button>
+            <button class="prompt-chip" data-q="projects" data-i18n="qProjects">🚀 Tell me about your projects</button>
+            <button class="prompt-chip" data-q="available" data-i18n="qAvailable">📅 Are you available for work?</button>
+            <button class="prompt-chip" data-q="contact" data-i18n="qContact">📩 How can I contact you?</button>
+          </div>
+
+          <!-- Text Input Form -->
+          <form class="chat-input-form" id="chatForm">
+            <input 
+              type="text" 
+              id="userInput" 
+              placeholder="Ask something about Amine..." 
+              data-i18n-placeholder="aiPlaceholder"
+              autocomplete="off" 
+              required 
+            />
+            <button type="submit" class="send-btn" aria-label="Send">
+              <span>↑</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  <!-- ================= FOOTER ================= -->
+  <section class="contact-section" id="contact">
+  <p class="section-kicker" data-i18n="contactKicker">04 / CONTACT</p>
+  <h2 class="contact-title" data-i18n="footerTitle">Let's build something memorable together.</h2>
+
+  <a href="mailto:codebyamine@gmail.com" class="hero-mail-link">
+    codebyamine@gmail.com ↗
+  </a>
+
+  <p class="direct-whatsapp-line">
+    WhatsApp:
+    <a
+      href="https://wa.me/212713305570?text=Hi%20Amine%2C%20I%20visited%20CODEBYAD%20and%20wanted%20to%20reach%20out."
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      +212 713 305 570 ↗
+    </a>
+  </p>
+
+  <footer class="site-footer">
+    <p>© 2026 AMINE.</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/amine-dkyar/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/codebyamine" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.instagram.com/codebyad?fqnt=YjVyM2VnNGJwaHc4" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://wa.me/212713305570" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </div>
+  </footer>
+</section>
+<!-- ================= RENDEZ-VOUS / APPLE CALENDAR MODAL ================= -->
+  <div class="booking-backdrop" id="bookingBackdrop" aria-hidden="true"></div>
+  <div class="booking-modal" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
+    <div class="booking-head">
+      <div>
+        <span class="booking-kicker" id="bookingCityTag">CASABLANCA</span>
+        <h3 id="bookingTitle" data-i18n="bookTitle">Book a Rendez-Vous</h3>
+      </div>
+      <button type="button" class="close-drawer-btn" id="closeBookingBtn" aria-label="Close">✕</button>
+    </div>
+
+    <p class="booking-sub" id="bookingSub" data-i18n="bookSub">
+      Fill in your details and choose your preferred day. Submitting generates an Apple Calendar (.ics) event.
+    </p>
+
+    <form id="bookingForm" class="booking-form">
+      <div class="form-row-2">
+        <div class="form-field">
+          <label for="bookFirstName" data-i18n="lblFirstName">Prénom / First Name</label>
+          <input type="text" id="bookFirstName" name="firstName" required placeholder="Youssef" />
+        </div>
+        <div class="form-field">
+          <label for="bookLastName" data-i18n="lblLastName">Nom / Last Name</label>
+          <input type="text" id="bookLastName" name="lastName" required placeholder="El Mansouri" />
+        </div>
+      </div>
+
+      <div class="form-row-2">
+        <div class="form-field">
+          <label for="bookEmail" data-i18n="lblEmail">Email</label>
+          <input type="email" id="bookEmail" name="email" required placeholder="name@company.com" />
+        </div>
+        <div class="form-field">
+          <label for="bookPhone" data-i18n="lblPhone">Phone Number</label>
+          <input type="tel" id="bookPhone" name="phone" required placeholder="+212 6XX XXX XXX" />
+        </div>
+      </div>
+
+      <div class="form-row-2">
+        <div class="form-field">
+          <label for="bookDate" data-i18n="lblDate">Preferred Day</label>
+          <input type="date" id="bookDate" name="date" required />
+        </div>
+        <div class="form-field">
+          <label for="bookTime" data-i18n="lblTime">Preferred Time</label>
+          <input type="time" id="bookTime" name="time" value="11:00" required />
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="bookNotes" data-i18n="lblNotes">Project / Topic (Optional)</label>
+        <input type="text" id="bookNotes" name="notes" placeholder="Website, full-stack app, UI design..." />
+      </div>
+
+      <div class="booking-actions">
+        <button type="submit" class="btn-primary booking-submit-btn" id="bookingSubmitBtn" data-i18n="btnAppleCal">
+          Add to Apple Calendar (.ics)
+        </button>
+      </div>
+
+      <div class="booking-feedback" id="bookingFeedback" aria-live="polite"></div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
